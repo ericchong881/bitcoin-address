@@ -95,3 +95,32 @@ An example usage:
 $ python client.py jesse@bit.jpanganiban.com
 {"address": "mybitcoinhash"}
 ```
+
+Question and Answer
+-------------------
+
+###Why Did You Build This?
+
+* Copy-and-pasting my bitcoin wallet address is hard.
+* No need to pull-up phone open your bitcoin app to show
+your QR code. Just have to remember this and done!
+* Vanity.
+
+###Why JSON?
+
+It's simple to use. Almost every programmer knows it.
+Should there be a better way to minimize the overhead of
+each transaction (ie, removal of braces), let's discuss it.
+
+###Why ZeroMQ?
+
+Again, it's simple to use. Request-Response support out of
+the box.
+
+###Why Python?
+
+Again, it's simple to use.
+
+###Why is Your Code Shitty?
+
+Help me improve it! :)
