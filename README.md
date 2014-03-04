@@ -42,3 +42,56 @@ the bitcoin hash the domain maps to. Again, it's in json.
 
 Should a name not map to something, the address value will
 hold the value `null`.
+
+Examples
+--------
+
+Wrote a server and a client under the directory `examples`.
+
+###Server
+
+The server does the conversion of addresses into hashes.
+
+```
+$ python server.py -h
+usage: server.py [-h] [--host HOST] [--port PORT]
+
+Bitcoin Address Server
+
+optional arguments:
+  -h, --help   show this help message and exit
+  --host HOST  Host the server binds to.
+  --port PORT  Port the server binds to.
+```
+
+Running it...
+
+```
+$ python server.py --host 0.0.0.0 --port 41791
+```
+
+###Client
+
+The client is a simple python binary that works like
+`$ whois`.
+
+```
+$ python client.py -h
+usage: client.py [-h] [--port PORT] address
+
+Bitcoin Address Client
+
+positional arguments:
+  address      Bitcoin address ala email: john@smith.com
+
+optional arguments:
+  -h, --help   show this help message and exit
+  --port PORT  Port the server runs.
+```
+
+An example usage:
+
+```
+$ python client.py jesse@bit.jpanganiban.com
+{"address": "mybitcoinhash"}
+```
