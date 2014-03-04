@@ -4,6 +4,12 @@ Bitcoin Address
 A simple protocol that allows you to mask your bitcoin
 address like an email (something like john@smith.com).
 
+Disclaimer
+----------
+
+This is not yet a production thing but just an initiation
+of an idea. Don't know if someone has done this yet.
+
 Insipiration
 ------------
 
