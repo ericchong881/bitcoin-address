@@ -4,6 +4,8 @@ Bitcoin Address
 A simple protocol that allows you to mask your bitcoin
 address like an email (something like john@smith.com).
 
+It's decentralized!
+
 Disclaimer
 ----------
 
